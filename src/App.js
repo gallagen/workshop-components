@@ -1,25 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Joke from './components/Joke' 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="joke-list">
+
+      <Joke 
+        salt={{
+          question: "Что за надпись на деньгах - Билет банка России?",
+          punchLine: "Мы куда-то едем или летим?"
+        }}
+      />
+
+      <Joke 
+        salt={{
+          question: "", 
+          punchLine: "Вчера была согласна на все, но все так никто и не предложил." 
+        }}
+      />
+
+      <Joke 
+        salt={{
+          question: "- Ты полная дура!",
+          punchLine: "- Нет, милый, стройная!"
+        }}
+      />
+
+      <Joke 
+        salt={{
+          question: "", 
+          punchLine: "Верните мне прошлое - там было такое замечательное будущее."
+        }}
+      />
+
+      <Joke 
+        salt={{
+          question: "- Кошелек или жизнь?",
+          punchLine: "- Мне кажется, это не лучший слоган для больницы." 
+        }}
+      />
+
+        </div>
   );
 }
 
