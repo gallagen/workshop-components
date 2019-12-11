@@ -3,11 +3,10 @@ import React from "react";
 function Joke(props) {
   return (
     <div className="joke">
-      <p style={{display: !props.salt.question && "none"}}>Question: {props.salt.question}</p>
-      <p style={{color: !props.salt.question && "#888888"}}>Answer: {props.salt.punchLine}</p>
-        <hr/>
-    </div>
-  );
+      <h3 style={{display: !props.question && "none"}}>Question: {props.question}</h3>
+        <h3 style={{color: !props.question && "#888888"}}>Answer: {props.punchLine}</h3>
+          </div>
+  )
 }
 
-export default Joke;
+      export default Joke;
